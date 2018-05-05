@@ -538,6 +538,21 @@ GET
 ````
 
 
+20./api/user/send_sms 发送短信
+
+* phone 电话 必须
+GET
+
+* 返回
+````json
+{
+	"status": 200,
+	"msg": "",
+	"data":{
+		"result": true
+	}
+}
+````
 
 
 
@@ -553,7 +568,8 @@ API接口 TODO
 5.取第几笔交易的值（流水）
 
 ~~5.钱包列表~~
-6.发送短信
+
+7.手续费 显示、说明
 
 
 21. /api/pet/generate 生成宠物
