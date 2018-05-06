@@ -493,11 +493,13 @@ POST
 2 钱包转钱包
 
 * 输入
-- type 转账类型 int 必须
+<!-- - type 转账类型 int 必须 -->
 - token 用户token string 必须
-- amount 数量 ！int？ double？ 必须
-- from 从哪个钱包转出！有争议
-- time 时间
+- amount 数量  double 必须
+- from 从哪个钱包转出
+- to 转入钱包
+- sig 签名
+<!-- - time 时间 -->
 
 * 返回
 ````json
@@ -538,10 +540,12 @@ GET
 ````
 
 
-20./api/user/send_sms 发送短信
+20. /api/user/send_sms 发送短信
 
 * phone 电话 必须
 GET
+
+PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天10条
 
 * 返回
 ````json
@@ -554,21 +558,134 @@ GET
 }
 ````
 
+20. 提现 /api/wallet/top_up
 
+输入
+* token
+* amount 数量大小
+* addr 目标地址
+
+* 返回
+````json
+{
+	"status": 200,
+	"msg": "",
+	"data":{
+		"result": true,
+		"flow": "WQAjhgquwe"
+	}
+}
+````
+
+21. 交易记录 获取单笔交易记录详细信息 /api/wallet/trans_record
+* GET flow string 流水 必须
+
+* 返回
+````json
+{
+	"status": 200,
+	"msg": "",
+	"data":{
+		"result": true,
+		"flow": "WQAjhgquwe",
+		"time": 2001-01-01 00:00:00,
+		"source": "ASDXZCASDQW", /*源钱包*/
+		"target": "ASDXZCASDQW", /*目标钱包*/
+		"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
+		"commission": 0.001 /*手续费 */
+		"amount": 10000.00 /*金额 */
+	}
+}
+````
+
+22. 提现记录 获取单笔提现记录详细信息 /api/wallet/topup_record
+
+* GET flow string 流水 必须
+
+* 返回
+````json
+{
+	"status": 200,
+	"msg": "",
+	"data":{
+		"result": true,
+		"flow": "WQAjhgquwe",
+		"time": 2001-01-01 00:00:00,
+		"target": "ASDXZCASDQW", /*目标钱包*/
+		"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
+		"commission": 0.001 /*手续费 */
+		"amount": 10000.00 /*金额 */
+	}
+}
+````
+
+
+23. 交易列表 根据钱包获取交易记录列表信息 /api/wallet/trans_list
+
+* GET addr 钱包地址
+* GET page 页码
+* GET size 一页记录数量
+* 返回
+````json
+{
+	"status": 200,
+	"msg": "",
+	"total_count": 2, // 总数
+	"data_set":[
+		{	
+			"flow": "WQAjhgquwe",
+			"time": 2001-01-01 00:00:00,
+			"target": "ASDXZCASDQW", /*目标钱包*/
+			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
+			"amount": 10000.00 /*金额 */
+		},
+		{	
+			"flow": "WQAjhgquwe",
+			"time": 2001-01-01 00:00:00,
+			"target": "ASDXZCASDQW", /*目标钱包*/
+			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
+			"amount": 10000.00 /*金额 */
+		},
+	]
+}
+````
+
+24. 提现列表 根据user获取提现记录列表信息 /api/wallet/topup_list
+* GET token 
+* GET page 页码
+* GET size 一页记录数量
+
+````json
+{
+	"status": 200,
+	"msg": "",
+	"total_count": 2, // 总数
+	"data_set":[
+		{	
+			"flow": "WQAjhgquwe",
+			"time": 2001-01-01 00:00:00,
+			"target": "ASDXZCASDQW", /*目标钱包*/
+			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
+			"commission": 0.001 /*手续费 */
+			"amount": 10000.00 /*金额 */
+		},
+		{	
+			"flow": "WQAjhgquwe",
+			"time": 2001-01-01 00:00:00,
+			"target": "ASDXZCASDQW", /*目标钱包*/
+			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
+			"commission": 0.001 /*手续费 */
+			"amount": 10000.00 /*金额 */
+		},
+	]
+}
+````
 
 API接口 TODO 
-详细的钱包API接口设计与文档：
-1.余额查询
-2.支付/转账
-3.交易记录/hash 查询
 4.链参数查询
 - 第三方 接入？
 - 链的高度
-
 5.取第几笔交易的值（流水）
-
-~~5.钱包列表~~
-
 7.手续费 显示、说明
 
 
