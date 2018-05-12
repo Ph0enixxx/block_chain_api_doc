@@ -8,20 +8,20 @@
 
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
-		"name": "手机用户123678113", // 临时用户名 string
-		"token": "ADASDASZXC" // 用户鉴权的token令牌 string
+		"result": true,  /* 返回结果 bool */
+		"name": "手机用户123678113",  /* 临时用户名 string */
+		"token": "ADASDASZXC"  /* 用户鉴权的token令牌 string */
 	}
 }
 ````
 
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data_set": [
 		1, 
 		2, 
@@ -46,17 +46,17 @@ POST
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"token": "ASDASZXCSADQWEQ",  // 用户鉴权的token令牌 string
-		"name": "233333", // 用户名 string
-		"uid": 1, // 用户id int
-		"pic": "https://img.aliyun.com/xxxx/1.jpg", // 用户头像url string
-		"phone": "+8617666666666", // 用户手机 string
-		"remark": "一个有故事的女同学", // 用户签名 string
-		"nnc_amount": 123.56, // 当前设备获得的积分数量 ！这个地方是int还是浮点？
-		"equip_count": 10 // 设备数量 正数int
+		"token": "ASDASZXCSADQWEQ",   /* 用户鉴权的token令牌 string */
+		"name": "233333",  /* 用户名 string */
+		"uid": 1,  /* 用户id int */
+		"pic": "https://img.aliyun.com/xxxx/1.jpg",  /* 用户头像url string */
+		"phone": "+8617666666666",  /* 用户手机 string */
+		"remark": "一个有故事的女同学",  /* 用户签名 string */
+		"nnc_amount": 123.56,  /* 当前设备获得的积分数量 ！这个地方是int还是浮点？ */
+		"equip_count": 10  /* 设备数量 正数int */
 	}
 }
 ````
@@ -76,12 +76,12 @@ POST
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
-		"name": "手机用户123678113", // 临时用户名 string
-		"token": "ADASDASZXC" // 用户鉴权的token令牌 string
+		"result": true,  /* 返回结果 bool */
+		"name": "手机用户123678113",  /* 临时用户名 string */
+		"token": "ADASDASZXC"  /* 用户鉴权的token令牌 string */
 	}
 }
 ````
@@ -98,10 +98,10 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
+		"result": true,  /* 返回结果 bool */
 	}
 }
 ````
@@ -125,10 +125,10 @@ POST
 * 每一步均返回，如果第一步失败，则无法执行第二步
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
+		"result": true,  /* 返回结果 bool */
 	}
 }
 ````
@@ -145,10 +145,10 @@ POST
 
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
+		"result": true,  /* 返回结果 bool */
 	}
 }
 ````
@@ -165,10 +165,10 @@ GET
 
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
+		"result": true,  /* 返回结果 bool */
 	}
 }
 ````
@@ -185,10 +185,10 @@ GET
 
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"url": "http://www.baidu.com/1.jpg", // 返回头像地址
+		"url": "http://www.baidu.com/1.jpg",  /* 返回头像地址 */
 	}
 }
 ````
@@ -205,16 +205,16 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"name": "233333", // 用户名 string
-		"uid": 1, // 用户id int
-		"pic": "https://img.aliyun.com/xxxx/1.jpg", // 用户头像url string
-		"phone": "+8617666666666", // 用户手机 string
-		"remark": "一个有故事的女同学", // 用户签名 string
-		"nnc_amount": 123.56, // 当前设备获得的积分数量
-		"equip_count": 10 // 设备数量 正数int
+		"name": "233333",  /* 用户名 string */
+		"uid": 1,  /* 用户id int */
+		"pic": "https://img.aliyun.com/xxxx/1.jpg",  /* 用户头像url string */
+		"phone": "+8617666666666",  /* 用户手机 string */
+		"remark": "一个有故事的女同学",  /* 用户签名 string */
+		"nnc_amount": 123.56,  /* 当前设备获得的积分数量 */
+		"equip_count": 10  /* 设备数量 正数int */
 	}
 }
 ````
@@ -232,10 +232,10 @@ GET
 
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true, // 返回结果 bool
+		"result": true,  /* 返回结果 bool */
 	}
 }
 ````
@@ -253,10 +253,10 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true  // 结果 bool 
+		"result": true   /* 结果 bool  */
 	}
 }
 ````
@@ -273,10 +273,10 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true  // 结果 bool 
+		"result": true   /* 结果 bool  */
 	}
 }
 ````
@@ -294,23 +294,23 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"name": "ASZXCASDAASDZXC", // 设备名称 string 
-		"uuid": "167823681638123", // 设备UUID string 
-		"online_time": 1401230981, // 在线时长（秒）int 
-		"status": 0, // 状态 0 下线 1 在线 2 其他情况
+		"name": "ASZXCASDAASDZXC",  /* 设备名称 string  */
+		"uuid": "167823681638123",  /* 设备UUID string  */
+		"online_time": 1401230981,  /* 在线时长（秒）int  */
+		"status": 0,  /* 状态 0 下线 1 在线 2 其他情况 */
 		"cash": [
 			{
-				"time": "2017-01-01 00:00:00", // 获取奖励时间
-				"type": "普通奖励", // 奖励类型
-				"amount": 48.00, // 奖励数量
+				"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+				"type": "普通奖励",  /* 奖励类型 */
+				"amount": 48.00,  /* 奖励数量 */
 			},
 			{
-				"time": "2017-01-01 00:00:00", // 获取奖励时间
-				"type": "普通奖励", // 奖励类型
-				"amount": 48.00, // 奖励数量
+				"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+				"type": "普通奖励",  /* 奖励类型 */
+				"amount": 48.00,  /* 奖励数量 */
 			},
 		]
 	}
@@ -330,10 +330,10 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true  // 结果 bool 
+		"result": true   /* 结果 bool  */
 	}
 }
 ````
@@ -355,87 +355,87 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data_set": [
 		{
-			"uuid": "ASDASDZXCZC", // 设备uuid
-			"remark": "挖掘鸡1", // 备注 string
-			"name": "XXZZZ", // 设备名称 string
+			"uuid": "ASDASDZXCZC",  /* 设备uuid */
+			"remark": "挖掘鸡1",  /* 备注 string */
+			"name": "XXZZZ",  /* 设备名称 string */
 			"cash":[
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 			]
 		},
 		{
-			"uuid": "ASDASDZXCZC", // 设备uuid
-			"remark": "挖掘鸡1", // 备注 string
-			"name": "XXZZZ", // 设备名称 string
+			"uuid": "ASDASDZXCZC",  /* 设备uuid */
+			"remark": "挖掘鸡1",  /* 备注 string */
+			"name": "XXZZZ",  /* 设备名称 string */
 			"cash":[
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 			]
 		},
 		{
-			"uuid": "ASDASDZXCZC", // 设备uuid
-			"remark": "挖掘鸡1", // 备注 string
-			"name": "XXZZZ", // 设备名称 string
+			"uuid": "ASDASDZXCZC",  /* 设备uuid */
+			"remark": "挖掘鸡1",  /* 备注 string */
+			"name": "XXZZZ",  /* 设备名称 string */
 			"cash":[
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 				{
-					"time": "2017-01-01 00:00:00", // 获取奖励时间
-					"type": "普通奖励", // 奖励类型
-					"amount": 48.00, // 奖励数量
+					"time": "2017-01-01 00:00:00",  /* 获取奖励时间 */
+					"type": "普通奖励",  /* 奖励类型 */
+					"amount": 48.00,  /* 奖励数量 */
 				},
 			]
 		},
@@ -457,26 +457,26 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data":{
-		"total_count": 200 // 总页数
+		"total_count": 200  /* 总页数 */
 	},
 	"data_set": [
 		{
-			"time": "2017-01-01 00:00:00", // 时间 time/string
-			"amount": 20, // 加多少积分 正数int
-			"type": "挂机奖励" // 奖励类型 string
+			"time": "2017-01-01 00:00:00",  /* 时间 time/string */
+			"amount": 20,  /* 加多少积分 正数int */
+			"type": "挂机奖励"  /* 奖励类型 string */
 		},
 		{
-			"time": "2017-01-01 00:00:00", // 时间 time/string
-			"amount": 20, // 加多少积分 正数int
-			"type": "挂机奖励" // 奖励类型 string
+			"time": "2017-01-01 00:00:00",  /* 时间 time/string */
+			"amount": 20,  /* 加多少积分 正数int */
+			"type": "挂机奖励"  /* 奖励类型 string */
 		},
 		{
-			"time": "2017-01-01 00:00:00", // 时间 time/string
-			"amount": 20, // 加多少积分 正数int
-			"type": "挂机奖励" // 奖励类型 string
+			"time": "2017-01-01 00:00:00",  /* 时间 time/string */
+			"amount": 20,  /* 加多少积分 正数int */
+			"type": "挂机奖励"  /* 奖励类型 string */
 		},
 	]
 }
@@ -500,11 +500,11 @@ GET
 * 返回（正确）
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"result": true  // 结果 bool 
-		"flow": "7123178235715371"  // 交易流水号 
+		"result": true   /* 结果 bool  */
+		"flow": "7123178235715371"   /* 交易流水号  */
 	}
 }
 ````
@@ -514,7 +514,7 @@ GET
     "status": 500,
     "msg": "转账提交失败",
     "data": {
-        "error_data": {  // 对应返回web3的错误信息
+        "error_data": {   /* 对应返回web3的错误信息 */
             "code": -32000,
             "message": "nonce too low"
         }
@@ -537,14 +537,14 @@ GET
 * 返回
 ````json
 {
-	"status": 200,  // 状态码
-	"msg": "",  // 错误信息
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
 	"data": {
-		"version_apk": "1.2.3.1"  // apk最新版本号
-		"version_ios": "1.2.3.1"  // ios最新版本号
-		"code_apk": 1001,  // apk版本序号 
-		"code_ios": 1001,  // ios版本序号 
-		"url_apk": "http://baidu.com/a.apk"  // 更新地址 ps 只安卓用
+		"version_apk": "1.2.3.1"   /* apk最新版本号 */
+		"version_ios": "1.2.3.1"   /* ios最新版本号 */
+		"code_apk": 1001,   /* apk版本序号  */
+		"code_ios": 1001,   /* ios版本序号  */
+		"url_apk": "http://baidu.com/a.apk"   /* 更新地址 ps 只安卓用 */
 	}
 }
 ````
@@ -640,7 +640,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 {
 	"status": 200,
 	"msg": "",
-	"total_count": 2, // 总数
+	"total_count": 2,  /* 总数 */
 	"data_set":[
 		{	
 			"flow": "WQAjhgquwe",
@@ -669,7 +669,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 {
 	"status": 200,
 	"msg": "",
-	"total_count": 2, // 总数
+	"total_count": 2,  /* 总数 */
 	"data_set":[
 		{	
 			"flow": "WQAjhgquwe",
@@ -697,9 +697,9 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 {
 	"status": 200,
 	"msg": "",
-	"total_count": 2, // 总数
+	"total_count": 2,  /* 总数 */
 	"data": {
-		"height": 1024, // 返回目前的区块高度
+		"height": 1024,  /* 返回目前的区块高度 */
 	}
 }
 ````
@@ -710,9 +710,9 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 {
 	"status": 200,
 	"msg": "",
-	"total_count": 2, // 总数
+	"total_count": 2,  /* 总数 */
 	"data": {
-		"gas_price": 1024, // 返回目前的gas price
+		"gas_price": 1024,  /* 返回目前的gas price */
 		"intr": "XXXX手续费xxxxxxx",
 	}
 }
