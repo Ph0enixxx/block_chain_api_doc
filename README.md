@@ -568,7 +568,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 }
 ````
 
-20. 提现 /api/wallet/top_up
+20. 提现 /api/wallet/topup
 
 输入
 * token
