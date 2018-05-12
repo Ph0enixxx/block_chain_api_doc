@@ -486,22 +486,18 @@ GET
 17. /api/money/trans 转账
 
 * 请求方式
-POST
-
-* 转账类型：
-1 用户设备积分转到钱包
-2 钱包转钱包
+GET
 
 * 输入
 <!-- - type 转账类型 int 必须 -->
 - token 用户token string 必须
-- amount 数量  double 必须
+<!-- - amount 数量  double 必须
 - from 从哪个钱包转出
-- to 转入钱包
-- sig 签名
+- to 转入钱包 -->
+- sig 签名 必须
 <!-- - time 时间 -->
 
-* 返回
+* 返回（正确）
 ````json
 {
 	"status": 200,  // 状态码
@@ -511,6 +507,20 @@ POST
 		"flow": "7123178235715371"  // 交易流水号 
 	}
 }
+````
+* 返回（错误）
+````json
+{
+    "status": 500,
+    "msg": "转账提交失败",
+    "data": {
+        "error_data": {  // 对应返回web3的错误信息
+            "code": -32000,
+            "message": "nonce too low"
+        }
+    }
+}
+
 ````
 
 
@@ -681,13 +691,36 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 }
 ````
 
-API接口 TODO 
-4.链参数查询
-- 第三方 接入？
-- 链的高度
-5.取第几笔交易的值（流水）
-7.手续费 显示、说明
+24. 区块链高度查询 /api/wallet/block_number
 
+````json
+{
+	"status": 200,
+	"msg": "",
+	"total_count": 2, // 总数
+	"data": {
+		"height": 1024, // 返回目前的区块高度
+	}
+}
+````
 
-21. /api/pet/generate 生成宠物
-22. 寻宝？？？
+25. 手续费 显示 /api/wallet/gas
+
+````json
+{
+	"status": 200,
+	"msg": "",
+	"total_count": 2, // 总数
+	"data": {
+		"gas_price": 1024, // 返回目前的gas price
+		"intr": "XXXX手续费xxxxxxx",
+	}
+}
+````
+
+TODO：
+
+26. /api/pet/generate 生成宠物
+27. 寻宝？？？
+28. 隐私政策
+29. 关于我们
