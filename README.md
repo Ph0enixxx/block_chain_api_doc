@@ -582,9 +582,24 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 	"msg": "",
 	"data":{
 		"result": true,
-		"flow": "WQAjhgquwe"
+		"flow": "WQAjhgquwe" // 流水号
 	}
 }
+````
+
+* 返回（错误）
+````json
+{
+    "status": 500,
+    "msg": "转账提交失败",
+    "data": {
+        "error_data": {   /* 对应返回web3的错误信息 */
+            "code": -32000,
+            "message": "nonce too low"
+        }
+    }
+}
+
 ````
 
 21. 交易记录 获取单笔交易记录详细信息 /api/wallet/trans_record
