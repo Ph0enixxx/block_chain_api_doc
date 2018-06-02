@@ -521,7 +521,7 @@ GET
 }
 ````
 
-21. 绑定车牌号 /api/score/car_bind
+21. 绑定/编辑车辆信息 /api/score/car_bind
 
 * 请求方式
 GET 
@@ -537,6 +537,10 @@ GET
 * 错误情况：
 - token 不对 提示 401 token失效
 - 输入为空 提示 400 汽车类型/车牌号/行驶里程/购车时间为空
+
+* 用例介绍：
+在之前用户未绑定时，绑定车牌号会插入一条算力增加记录，绑定之后则只为修改车辆信息
+
 
 * 正确返回：
 
@@ -579,6 +583,7 @@ GET
 	"status": 200,   /* 状态码 */
 	"msg": "",   /* 错误信息 */
 	"data": {
+		"bank_id": 1,
 		"result": true,  /* 返回结果 bool */
 	}
 }
@@ -606,6 +611,7 @@ GET
 	"total_count": 2,
 	"data_set": [
 		{
+			"bank_id": 1,
 			"province":"山东",
 			"city":"烟台",
 			"bank":"农行",
@@ -614,6 +620,7 @@ GET
 			"name":"XXX",
 		},
 		{
+			"bank_id": 2,
 			"province":"山东",
 			"city":"烟台",
 			"bank":"农行",
@@ -625,7 +632,34 @@ GET
 }
 ````
 
-24. 课程学习 /api/score/lesson_learn
+24. 删除银行卡 /api/score/bank_del
+
+* 请求方式
+GET 
+
+* 输入
+- token 用户令牌 string 必须 
+- bank_id 银行卡id int 必须
+
+* 错误情况：
+- token 不对 提示 401 token失效
+- 输入为空 提示 400 字段不能为空
+- bank_id不属于该用户或者不存在 提示 400 银行卡信息异常
+
+* 正确返回：
+
+````json
+{
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
+	"data": {
+		"result": true,  /* 返回结果 bool */
+	}
+}
+````
+    
+
+25. 课程学习 /api/score/lesson_learn
 
 * 请求方式
 GET 
