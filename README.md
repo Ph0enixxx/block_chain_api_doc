@@ -70,9 +70,13 @@ TODO 酒链世界
 * 输入
 - phone 用户电话 string 必须
 - password 用户密码 string 必须
-- verify 电话收到的验证码 string 必须
 - invite 邀请码 string 可选
-- 
+- id_name 身份认证姓名 string 必须
+- id_card 身份证号 string 必须
+
+* 用例解释
+先使用 /api/user/verify 接口进行验证， 如果返回true后 在10分钟内进行注册
+
 
 * 返回
 ````json
@@ -503,7 +507,7 @@ GET
 * 输入
 - phone 用户电话 string 必须 
 - verify 验证码 string 必须
-- action 动作 string 必须 目前只有reg
+<!-- - action 动作 string 必须 目前只有reg -->
 
 * 用例介绍
 配合注册使用，在提交verify后， 后台n分钟内注册不用验证码，在执行完注册动作后，会作废（需要重新验证）
