@@ -714,7 +714,20 @@ GET
 	"msg": "",   /* 错误信息 */
 	"total_count": 2,   
 	"data_set": [
-		TODO 
+		{
+			"title": "xxxx",
+			"use_url": true,
+			"url": "http://asdasdasd.com/1.mp4",
+			"add_time": 2018-01-01 00:00:00,
+			"video": "",
+		},
+		{
+			"title": "xxxx",
+			"use_url": false,  /* 为true时，使用URL的地址，为false时，使用video的地址 */
+			"url": "",
+			"add_time": 2018-01-01 00:00:00,
+			"video": "http://asdasdasd.com/1.mp4",
+		},
 	]
 }
 ````
