@@ -807,7 +807,7 @@ GET
 }
 ````
 
-28. 可获取的积分记录 /api/score/rank_list
+28. 可获取的积分记录 /api/score/score_list
 
 * 请求方式
 GET 
@@ -846,7 +846,7 @@ GET
 }
 ````
 
-29. 点击获取积分 /api/score/rank_get
+29. 点击获取积分 /api/score/score_get
 
 * 请求方式
 GET 
@@ -929,19 +929,19 @@ GET
 		{
 			"addr_id": 123,
 			"addr": "xxx",
-			"name": "xxxxx",
+			"receiver": "xxxxx",
 			"phone": "1231231231"
 		},
 		{
 			"addr_id": 1234,
 			"addr": "xxx",
-			"name": "xxxxx",
+			"receiver": "xxxxx",
 			"phone": "1231231231"
 		},
 		{
 			"addr_id": 125,
 			"addr": "xxx",
-			"name": "xxxxx",
+			"receiver": "xxxxx",
 			"phone": "1231231231"
 		}
 	]
@@ -990,7 +990,7 @@ GET
 
 * 输入
 - token 用户令牌 string 必须 
-- secret 微信号中的key string 必须
+- wechat_secret 微信号中的key string 必须
 
 * 用例介绍 
 关注微信号后，会发送给用户一个secret，向此api提交secret后， 后台会检查与conf中的WECHAT_SECRET是否相同，如果相同且之前未写入备注为wechat_follow的用户积分添加记录，则写入一条
