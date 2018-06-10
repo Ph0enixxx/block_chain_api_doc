@@ -1009,6 +1009,8 @@ GET
 35. 行车记录仪绑定 /api/score/record_search
 预留
 
+-------
+
 36. 获取某区域的信息 /api/city/area_info
 
 * 请求方式
@@ -1025,17 +1027,17 @@ GET
 地方写的不对， 返回400 无此区域
 
 ````json
-{
-	"status": 200,   /* 状态码 */
-	"msg": "",   /* 错误信息 */
-	"data": {
-		"area": "山东省烟台市牟平区",  /* 返回结果 bool */
-		"base_amount": "30000",  /* 返回结果 bool */
-		"status": 0,  /* 0为未出售 1为已出售 2为正在转卖 */
-		"area_id": 123, /* 区域id */
-		TODO 折线图？
+	{
+		"status": 200,   /* 状态码 */
+		"msg": "",   /* 错误信息 */
+		"data": {
+			"area": "山东省烟台市牟平区",  /* 返回结果 string */
+			"base_amount": "30000",  /* 返回结果 int */
+			"status": 0,  /* 0为未出售 1为已出售 2为正在转卖 */
+			"area_id": 123, /* 区域id */
+			TODO 折线图？
+		}
 	}
-}
 ````
 
 37. 区域信息搜索 /api/city/area_search
