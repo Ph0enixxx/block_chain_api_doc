@@ -887,6 +887,8 @@ GET
 - addr 地址 string 必须
 - name 收件人 string 必须
 - phone 电话 string 必须
+- is_default string 必须, 0或者1
+
 
 ````json
 {
