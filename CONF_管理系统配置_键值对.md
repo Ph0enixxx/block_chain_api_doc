@@ -11,3 +11,10 @@ GAS_PRICE_INTR 手续费介绍
 WECHAT_SECRET 微信口令（用于关注微信号并获取算力）
 
 MAX_INVITATION 最大邀请好友数量
+
+ADD_ADDR_SPEED 添加地址的算力
+BIND_BANK_SPEED 绑定银行卡的算力
+ADD_LESSON_SPEED 上课添加的算力
+ADD_CAR_SPEED 添加车辆信息的算力
+FOLLOW_WECHAT_SPEED 关注微信的算力
+ADD_INVITE_SPEED 邀请添加的算力
