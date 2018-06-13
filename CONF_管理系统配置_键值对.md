@@ -9,3 +9,5 @@ GAS_PRICE 手续费(gas price)
 GAS_PRICE_INTR 手续费介绍
 
 WECHAT_SECRET 微信口令（用于关注微信号并获取算力）
+
+MAX_INVITATION 最大邀请好友数量

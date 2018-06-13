@@ -219,8 +219,15 @@ GET
 		"phone": "+8617666666666",  /* 用户手机 string */
 		"remark": "一个有故事的女同学",  /* 用户签名 string */
 		"nnc_amount": 123.56,  /* 当前设备获得的积分数量 */
-		"equip_count": 10  /* 设备数量 正数int */
-	}
+		"equip_count": 10,  /* 设备数量 正数int */
+		"id_card": 10,  /* 身份证号 str */
+		"id_name": 10,  /* 身份证姓名 str */
+		"car_type": "self.car_type",  /* 汽车类型 str */
+        "car_miles": "self.car_miles",  /* 汽车公里数 str */
+        "car_id": "self.car_id",  /* 车牌号 str */
+        "car_buy_time": "self.car_buy_time",  /* 购买时间 str */
+        "invition_last": 9 /* 还有多少好友可以邀请 */
+}
 }
 ````
 
@@ -902,6 +909,7 @@ GET
 - addr 地址 string 可选
 - name 收件人 string 可选
 - phone 电话 string 可选
+- is_default string 可选，0或者1
 
 ````json
 {
@@ -1236,8 +1244,38 @@ GET
 }
 ````
 
+43. 算力添加记录 /api/score/speed_added
 
+* 请求方式 
+GET
 
+* 输入
+- token 用户令牌 string 必须
+
+* 用例介绍
+返回各个算力添加的原因
+
+````json
+{
+    "data_set": [
+        {
+            "reason": "LOGIN_2018-06-13"  /* 登陆 */
+        },
+        {
+            "reason": "ADD_CAR_INFO"  /* 添加车辆信息 */
+        },
+        {
+            "reason": "ADD_BANKCARD_INFO"  /* 添加银行卡 */
+        },
+        {
+            "reason": "FOLLOW_WECHAT"  /* 关注微信 */
+        }
+    ],
+    "total_count": 4,
+    "msg": "",
+    "status": 200
+}
+````
 
 TODO：
 
