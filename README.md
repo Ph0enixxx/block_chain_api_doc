@@ -1269,6 +1269,9 @@ GET
         },
         {
             "reason": "FOLLOW_WECHAT"  /* 关注微信 */
+        },
+        {
+        	"reason": "LEARN_LESSON_ID:1"  /* 学习了1号视频 */
         }
     ],
     "total_count": 4,
