@@ -940,18 +940,21 @@ GET
 			"addr_id": 123,
 			"addr": "xxx",
 			"name": "xxxxx",
+			"is_default": true,
 			"phone": "1231231231"
 		},
 		{
 			"addr_id": 1234,
 			"addr": "xxx",
 			"name": "xxxxx",
+			"is_default": false,
 			"phone": "1231231231"
 		},
 		{
 			"addr_id": 125,
 			"addr": "xxx",
 			"name": "xxxxx",
+			"is_default": false,
 			"phone": "1231231231"
 		}
 	]
@@ -1274,9 +1277,15 @@ GET
         },
         {
         	"reason": "LEARN_LESSON_ID:1"  /* 学习了1号视频 */
+        },
+        {
+            "reason": "ADD_ADDRESS"  /* 添加了收货地址 */
+        },
+        {
+            "reason": "ADD_INVITE"  /* 添加了邀请 */
         }
     ],
-    "total_count": 4,
+    "total_count": 6,
     "msg": "",
     "status": 200
 }
