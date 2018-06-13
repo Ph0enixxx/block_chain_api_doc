@@ -939,19 +939,19 @@ GET
 		{
 			"addr_id": 123,
 			"addr": "xxx",
-			"receiver": "xxxxx",
+			"name": "xxxxx",
 			"phone": "1231231231"
 		},
 		{
 			"addr_id": 1234,
 			"addr": "xxx",
-			"receiver": "xxxxx",
+			"name": "xxxxx",
 			"phone": "1231231231"
 		},
 		{
 			"addr_id": 125,
 			"addr": "xxx",
-			"receiver": "xxxxx",
+			"name": "xxxxx",
 			"phone": "1231231231"
 		}
 	]
