@@ -1290,6 +1290,48 @@ GET
 }
 ````
 
+44. 银行列表 /api/city/bank_name_list
+* 请求方式 
+GET
+
+* 输入 None
+
+````json
+{
+    "data_set": [
+       "中国人民银行",
+       "中国人民银行",
+       "中国人民银行",
+       "中国人民银行",
+       "中国人民银行",
+       "中国人民银行"
+    ],
+    "total_count": 6,
+    "msg": "",
+    "status": 200
+}
+````
+
+45. 滚动消息列表 /api/other/news_list
+
+* 请求方式 
+GET
+
+* 输入 None
+
+````json
+{
+    "data_set": [
+       "江南皮革厂倒闭了",
+    ],
+    "total_count": 1,
+    "msg": "",
+    "status": 200
+}
+````
+
+
+
 TODO：
 
 26. /api/pet/generate 生成宠物
