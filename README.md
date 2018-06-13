@@ -226,6 +226,8 @@ GET
         "car_miles": "self.car_miles",  /* 汽车公里数 str */
         "car_id": "self.car_id",  /* 车牌号 str */
         "car_buy_time": "self.car_buy_time",  /* 购买时间 str */
+        "apk_url": "http://a.com/a.apk", /* 邀请用二维码地址 */
+        "invite_code": "asdad", /* 邀请码 */
         "invition_last": 9 /* 还有多少好友可以邀请 */
 }
 }
