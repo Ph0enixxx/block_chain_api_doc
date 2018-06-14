@@ -48,14 +48,25 @@ POST
 	"status": 200,   /* 状态码 */
 	"msg": "",   /* 错误信息 */
 	"data": {
-		"token": "ASDASZXCSADQWEQ",   /* 用户鉴权的token令牌 string */
-		"name": "233333",  /* 用户名 string */
-		"uid": 1,  /* 用户id int */
-		"phone": "+8617666666666",  /* 用户手机 string */
-		"remark": "一个有故事的女同学",  /* 用户签名 string */
-		"score_amount": 123.56,  /* 当前积分数量 */
-		"score_speed": 10, /* 算力 */
-	}
+        "id_name": "邵英帅",
+        "car_miles": "123",  // 汽车公里数
+        "score_speed": 170,  // 算力
+        "score_amount": 140, // 积分 
+        "remark": "",  // 签名
+        "uid": 18, // 用户id、注册用户序号
+        "id_card": "370704199611182412", // 身份证id
+        "car_id": "123123", // 车牌号
+        "invition_last": 10,  // 剩余可邀请人数
+        "invite_code": "7ce3kg",  // 邀请码
+        "apk_url": "http://baidu.com/a.apk",  // apk地址
+        "car_type": "保时捷2",  // 车辆类型
+        "name": "", // 用户昵称
+        "phone": "17605887063",  // 用户电话
+        "car_buy_time": "2017-01-01 00:00:00", // 购车时间
+        "token": "asdasdasdasa", // 用户凭证
+        "invite_code": "asdad", /* 邀请码 */
+        "invition_last": 9 /* 还有多少好友可以邀请 */
+    },
 }
 ````
 
