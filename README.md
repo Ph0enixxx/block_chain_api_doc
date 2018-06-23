@@ -1375,6 +1375,57 @@ token 必填 用户AccessToken
 }
 ````
 
+48. 车牌类型列表 /api/other/car_number_type
+
+返回：
+
+````json
+{
+    "status": 200,
+    "msg": "",
+    "data_set": [
+         {
+            "province": "冀",
+            "list": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "H",
+                "J",
+                "R",
+                "T"
+            ]
+        },
+        {
+            "province": "豫",
+            "list": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "P",
+                "Q",
+                "R",
+                "S",
+                "U"
+            ]
+        }
+    ]
+}
+````
+
 26. /api/pet/generate 生成宠物
 27. 寻宝？？？
 28. 隐私政策
