@@ -1348,7 +1348,32 @@ GET
 
 46. 自定义网页 /api/other/page
 
-TODO：
+47. 邀请好友列表 /api/user/invite_list
+
+请求方式 GET
+
+参数
+token 必填 用户AccessToken
+
+返回:
+````json
+{
+    "status": 200,
+    "msg": "",
+    "data_set": [
+        {
+            "time": "2018-06-13 03:27:05",
+            "uid": 5,
+            "id_name": "123123"
+        },
+        {
+            "time": "2018-06-13 05:50:03",
+            "uid": 6,
+            "id_name": "邵英帅"
+        }
+    ]
+}
+````
 
 26. /api/pet/generate 生成宠物
 27. 寻宝？？？
