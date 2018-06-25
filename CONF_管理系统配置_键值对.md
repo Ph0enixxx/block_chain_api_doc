@@ -21,5 +21,7 @@ ADD_INVITE_SPEED 邀请添加的算力
 
 MOCK_PEOPLE 算力假人数值
 MOCK_RANKLIST 算力排行榜假人
+MOCK_RANKLIST_APPLIED 算力排行榜假人id添加是否生效
 SCORE_DEFAULT_VALUE 每日算力缺省数值
 MAX_RANKLIST_DISPLAY 排行榜最大显示人数
+<!-- RANK_ID_PRE 排行榜最大显示人数 -->

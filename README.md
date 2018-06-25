@@ -1426,6 +1426,33 @@ token 必填 用户AccessToken
 }
 ````
 
+49. 日常算力添加记录 /api/score/speed_record
+* 请求方式 
+GET
+
+* 输入
+- token 用户令牌 string 必须
+- page 
+- size
+
+* 用例介绍
+返回各个算力添加的原因、时间、数量
+
+````json
+{
+    "data_set": [
+        {
+            "reason": "LOGIN_2018-06-13",  /* 登陆 */
+            "speed": 10,
+            "add_time": "2018-01-01 00:00:00"
+        },
+        
+    ],
+    "total_count": 6,
+    "msg": "",
+    "status": 200
+}
+````
 26. /api/pet/generate 生成宠物
 27. 寻宝？？？
 28. 隐私政策
