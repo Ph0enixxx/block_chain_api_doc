@@ -1047,7 +1047,7 @@ GET
 代理交易流程：
 
 1.用户A挂单-> 2.用户B申请购买 -> 3.订单状态改为“待付款”，并且无法由A取消
--> 4.用户B根据返回的账户和信息进行汇款（或者超时或者取消，结束） -> 5.审核人员C在后台看到提交记录，并查收银行的汇款 -> 6.确认无误后将订单标记为“已完成，等待系统付款给卖方”，并更改地区代理所有者，填写收款流水号 ->7.将款打给A的主银行卡号，并填写流水号作为备注 -> 8. 结束
+-> 4.用户B根据返回的账户和信息进行汇款（或者超时或者取消，结束） -> 5.审核人员C在后台看到提交记录，并查收银行的汇款 -> 6.确认无误后将订单标记为“已完成，等待系统付款给卖方”，并更改地区代理所有者，填写收款流水号 ->7.将款打给A的主银行卡号，并填写流水号作为备注，修改价格为之前的120% -> 8. 结束
 
 -----
 
@@ -1512,5 +1512,75 @@ GET
     "total_count": 6,
     "msg": "",
     "status": 200
+}
+````
+
+50. 钱包余额 /api/wallet/balance
+
+* 请求方式 
+GET
+
+* 输入
+- token 用户令牌 string 必须
+- addr 钱包地址 string 必须
+
+* 用例介绍
+用于返回钱包地址对应的余额
+
+
+````json
+{
+    "data":{
+    	"balance": "100000000"  // 注意这里强转了string，不然json可能引起解析错误
+    },
+    "msg": "",
+    "status": 200
+}
+````
+
+51. （七牛）获取上传token /api/user/upload_token
+
+请求参数：
+
+  名称      	含义           	类型    	是否必须	长度                
+  token   	用户AccessToken	string	是   	设置的TOKEN_LEN，通常为20
+  file_ext	文件扩展名        	string	是   	                  
+
+PS：
+
+1. 扩展名不用带点 “xxx.jpg ” 直接传jpg就行了
+2. 注意form表单上传的时候，使用目标域名为： ~~http://up-z1.qiniup.com/~~
+3. 目前的测试上传域名：~~http://pa7pxfoa4.bkt.clouddn.com~~  （上传文件后拼接域名和文件名即可 如：http://pa7pxfoa4.bkt.clouddn.com/de767470745311e8b23034363b6f3816.jpg）
+
+相关资料和API文档：
+
+https://developer.qiniu.com/kodo/manual/1272/form-upload
+
+
+返回：
+
+````json
+    {
+    "hash": "FhsuIYjnBMRBj7haSP1RYzK7_tD7",
+    "key": "de767470745311e8b23034363b6f3816.jpg"  /* 文件名 */
+    }
+````
+
+52. /api/user/upload_cer 上传/更新驾照信息
+
+* 请求方式
+GET 
+
+* 输入
+- token 用户令牌 string 必须 
+- cer_url 驾照地址（七牛云上传成功后的地址） string 必须
+
+````json
+{
+	"status": 200,   /* 状态码 */
+	"msg": "",   /* 错误信息 */
+	"data": {
+		"result": true,  /* 返回结果 bool */
+	}
 }
 ````
