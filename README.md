@@ -1232,7 +1232,6 @@ area_id 只能输入对应用户所拥有的 否则400 区域id非法
 	"msg": "",   /* 错误信息 */
 	"data": {
 		"result": true,  /* 返回结果 bool */
-		"transaction_id": 1, /*订单ID*/
 	}
 }
 ````
