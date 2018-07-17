@@ -443,6 +443,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 			"flow": "WQAjhgquwe",
 			"time": 2001-01-01 00:00:00,
 			"target": "ASDXZCASDQW", /*目标钱包*/
+			"source": "ASDXZCASDQW", /*来源钱包*/
 			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
 			"amount": 10000.00 /*金额 */
 		},
@@ -450,6 +451,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 			"flow": "WQAjhgquwe",
 			"time": 2001-01-01 00:00:00,
 			"target": "ASDXZCASDQW", /*目标钱包*/
+			"source": "ASDXZCASDQW", /*来源钱包*/
 			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
 			"amount": 10000.00 /*金额 */
 		},
@@ -1168,7 +1170,7 @@ GET
 			"area_id": 123, /* 区域id */
 			"area": "山东省烟台市牟平区",  /* 返回结果 bool */
 			"amount": 30000,  /* 价格 */
-			"status": 0,  /* 0 交易发起 1 卖家取消 2 买家取消 3 超时取消 4 买家已付款 5 交易完成，正在给卖家打款 6 交易完成，结束*/
+			"status": 0,  /* 0 交易发起 1 卖家取消 2 审核失败 3 超时取消 4 买家已付款 5 交易完成，正在给卖家打款 6 交易完成，结束*/
 			"transaction_id": 1, /*订单ID*/
 		}
 	]
@@ -1312,7 +1314,7 @@ GET
 			"area_id": 123, /* 区域id */
 			"area": "山东省烟台市牟平区",  /* 返回结果 bool */
 			"amount": 30000,  /* 价格 */
-			"status": 0,  /* 0 交易发起 1 卖家取消 2 买家取消 3 超时取消 4 买家已付款 5 交易完成，正在给卖家打款 6 交易完成，结束*/
+			"status": 0,  /* 0 交易发起 1 卖家取消 2 审核失败 3 超时取消 4 买家已付款 5 交易完成，正在给卖家打款 6 交易完成，结束*/
 			"transaction_id": 1, /*订单ID*/
 		}
 	]
@@ -1583,3 +1585,7 @@ GET
 	}
 }
 ````
+
+AK:  jTCBUZFfVxXZiUOxwJrX2psevRerkzzqNyZoV4jI
+SK:  j_P33_k2qOFBXlM8FagcmbzFBWltHERPWzju0Xax
+bucket： emole
