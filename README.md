@@ -474,6 +474,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 			"flow": "WQAjhgquwe",
 			"time": "2001-01-01 00:00:00",
 			"target": "ASDXZCASDQW", /*目标钱包*/
+			"source": "ASDXZCASDQW", /*来源钱包*/
 			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
 			"commission": 0.001, /*手续费 */
 			"amount": 10000.00 /*金额 */
@@ -482,6 +483,7 @@ PS：单个手机发送有频率限制：一分钟1条，一小时5条，一天1
 			"flow": "WQAjhgquwe",
 			"time": "2001-01-01 00:00:00",
 			"target": "ASDXZCASDQW", /*目标钱包*/
+			"source": "ASDXZCASDQW", /*来源钱包*/
 			"status": 1, /*状态， 0 未提交，1 交易成功，2 交易失败*/
 			"commission": 0.001, /*手续费 */
 			"amount": 10000.00 /*金额 */
@@ -1523,7 +1525,9 @@ GET
 
 * 输入
 - token 用户令牌 string 必须
-- addr 钱包地址 string 必须
+- addr 钱包地址 string列表 必须
+
+addr输入方式类似于  地址1,地址2,地址3 这样
 
 * 用例介绍
 用于返回钱包地址对应的余额
@@ -1531,9 +1535,9 @@ GET
 
 ````json
 {
-    "data":{
-    	"balance": "100000000"  // 注意这里强转了string，不然json可能引起解析错误
-    },
+    "data_set":[
+    	{"balance": "100000000", "addr": "0xsadasdasdsads"}  // 注意这里强转了string，不然json可能引起解析错误
+    ],
     "msg": "",
     "status": 200
 }
@@ -1589,3 +1593,18 @@ GET
 AK:  jTCBUZFfVxXZiUOxwJrX2psevRerkzzqNyZoV4jI
 SK:  j_P33_k2qOFBXlM8FagcmbzFBWltHERPWzju0Xax
 bucket： emole
+
+
+52. 获取当前交易数（包括队列中的） /api/wallet/get_nonce
+
+返回
+
+````json
+{
+	"status": 200,
+	"msg": "",
+	"data":{
+		"nonce": 123
+	}
+}
+````
