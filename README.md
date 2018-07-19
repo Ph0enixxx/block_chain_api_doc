@@ -1065,6 +1065,7 @@ GET
 - province 省 string 必须
 - city 市 string 必须
 - county 区县 string 必须
+- token 令牌 string 必须
 
 * 异常
 
