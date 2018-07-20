@@ -1149,6 +1149,10 @@ POST
 		"code": "F58D5H", /* 备注、附言 */
 		"result": true,  /* 返回结果 bool */
 		"transaction_id": 1, /*订单ID*/
+		"target_card": "xxxxxx",  // 银行卡
+		"target_bank": "assadasd", // 开户行
+		"target_receiver": "xxx",  // 收款人
+		"target_price": 300000,   // 金额
 	}
 }
 ````
