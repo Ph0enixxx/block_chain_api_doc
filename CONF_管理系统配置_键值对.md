@@ -25,3 +25,7 @@ MOCK_RANKLIST_APPLIED 算力排行榜假人id添加是否生效
 SCORE_DEFAULT_VALUE 每日算力缺省数值
 MAX_RANKLIST_DISPLAY 排行榜最大显示人数
 <!-- RANK_ID_PRE 排行榜最大显示人数 -->
+
+PAY_BANK 支付行
+PAY_CARD 支付卡
+PAY_NAME 收款人
