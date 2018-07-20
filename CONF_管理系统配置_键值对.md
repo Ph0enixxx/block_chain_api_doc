@@ -29,3 +29,5 @@ MAX_RANKLIST_DISPLAY 排行榜最大显示人数
 PAY_BANK 支付行
 PAY_CARD 支付卡
 PAY_NAME 收款人
+
+CONTACT 联系方式
