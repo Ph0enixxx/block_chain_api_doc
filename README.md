@@ -65,7 +65,8 @@ POST
         "car_buy_time": "2017-01-01 00:00:00", // 购车时间
         "token": "asdasdasdasa", // 用户凭证
         "invite_code": "asdad", /* 邀请码 */
-        "invition_last": 9 /* 还有多少好友可以邀请 */
+        "invition_last": 9, /* 还有多少好友可以邀请 */
+        "contact": 17065887063  // 平台的联系方式
     },
 }
 ````
@@ -239,7 +240,8 @@ GET
         "car_buy_time": "self.car_buy_time",  /* 购买时间 str */
         "apk_url": "http://a.com/a.apk", /* 邀请用二维码地址 */
         "invite_code": "asdad", /* 邀请码 */
-        "invition_last": 9 /* 还有多少好友可以邀请 */
+        "invition_last": 9, /* 还有多少好友可以邀请 */
+        "contact": 17065887063  // 平台的联系方式
 }
 }
 ````
@@ -1149,6 +1151,7 @@ POST
 		"code": "F58D5H", /* 备注、附言 */
 		"result": true,  /* 返回结果 bool */
 		"transaction_id": 1, /*订单ID*/
+		"start_time": 2018-01-01, // 开始时间
 		"target_card": "xxxxxx",  // 银行卡
 		"target_bank": "assadasd", // 开户行
 		"target_receiver": "xxx",  // 收款人
