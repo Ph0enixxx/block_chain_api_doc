@@ -1631,10 +1631,14 @@ https://developer.qiniu.com/kodo/manual/1272/form-upload
 返回：
 
 ````json
-    {
-    "hash": "FhsuIYjnBMRBj7haSP1RYzK7_tD7",
-    "key": "de767470745311e8b23034363b6f3816.jpg"  /* 文件名 */
-    }
+{
+    "status": 200,
+    "data": {
+        "key": "b819edd48cd111e89d8200163e066438.jpg",  // 文件名
+        "token": "KktWkYF-GzBnTQg6vFykBBtXSdIiW-SdfJtf14GS:zfIVvktCXY7AehLPMEOuS22GHRU=:eyJkZWFkbGluZSI6MTUzMjE3NjQ5OSwic2NvcGUiOiJ0cmFjZS1tZWRpYS12MTpiODE5ZWRkNDhjZDExMWU4OWQ4MjAwMTYzZTA2NjQzOC5qcGciLCJjYWxsYmFja0JvZHkiOiJmaWxlbmFtZT0kKGZuYW1lKSZmaWxlc2l6ZT0kKGZzaXplKSZoYXNoPSQoZXRhZykifQ=="  // token
+    },
+    "msg": ""
+}
 ````
 
 52. /api/user/upload_cer 上传/更新驾照信息
