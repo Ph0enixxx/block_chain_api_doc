@@ -1422,7 +1422,10 @@ GET
         },
         {
             "reason": "ADD_INVITE"  /* 添加了邀请 */
-        }
+        },
+        {
+            "reason": "ADD_CARID"  /* 添加了驾驶证 */
+        },
     ],
     "total_count": 6,
     "msg": "",
@@ -1639,6 +1642,8 @@ GET
 * 输入
 - token 用户令牌 string 必须 
 - cer_url 驾照地址（七牛云上传成功后的地址） string 必须
+
+* 用例解释：第一次添加会添加算力记录
 
 ````json
 {
