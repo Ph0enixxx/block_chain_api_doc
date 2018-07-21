@@ -1194,7 +1194,8 @@ POST
 		"target_bank": "assadasd", // 开户行
 		"target_receiver": "xxx",  // 收款人
 		"target_price": 300000,   // 金额
-		"contact": 123131312, // 卖家联系方式
+		"buyer_contact": 123131312, // 买家联系方式
+		"seller_contact": 123131312, // 卖家联系方式
 	}
 }
 ````
@@ -1224,7 +1225,8 @@ GET
 			"start_time": 2018-01-01, // 开始时间
 			"status": 0,  /* 0 交易发起 1 卖家取消 2 审核失败 3 超时取消 4 买家已付款 5 交易完成，正在给卖家打款 6 交易完成，结束*/
 			"transaction_id": 1, /*订单ID*/
-			"contact": 123131312, // 卖家联系方式
+			"buyer_contact": 123131312, // 买家联系方式
+			"seller_contact": 123131312, // 卖家联系方式		
 		}
 	]
 }
@@ -1257,7 +1259,8 @@ GET
 			"start_time": 2018-01-01, // 开始时间
 			"transaction_id": 1, /*订单ID*/
 			// "buy_time": 2017-01-01 /* 购买时间 */
-			"contact": 123131312, // 卖家联系方式
+			"buyer_contact": 123131312, // 买家联系方式
+			"seller_contact": 123131312, // 卖家联系方式
 		}
 	]
 }
@@ -1372,7 +1375,8 @@ GET
 			"status": 0,  /* 0 交易发起 1 卖家取消 2 审核失败 3 超时取消 4 买家已付款 5 交易完成，正在给卖家打款 6 交易完成，结束*/
 			"start_time": 2018-01-01, // 开始时间
 			"transaction_id": 1, /*订单ID*/
-			"contact": 123131312, // 卖家联系方式
+			"buyer_contact": 123131312, // 买家联系方式
+			"seller_contact": 123131312, // 卖家联系方式
 		}
 	]
 }
