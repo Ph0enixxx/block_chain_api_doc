@@ -1610,14 +1610,17 @@ addr输入方式类似于  地址1,地址2,地址3 这样
 
 请求参数：
 
-  名称      	含义           	类型    	是否必须	长度                
-  token   	用户AccessToken	string	是   	设置的TOKEN_LEN，通常为20
-  file_ext	文件扩展名        	string	是   	                  
+ * 名称      	含义           	类型    	是否必须	长度                
+ 
+ * token   	用户AccessToken	string	是   	设置的TOKEN_LEN，通常为20
+ 
+ * file_ext	文件扩展名        	string	是   	                  
+
 
 PS：
 
 1. 扩展名不用带点 “xxx.jpg ” 直接传jpg就行了
-2. 注意form表单上传的时候，使用目标域名为： ~~http://up-z1.qiniup.com/~~
+2. 上传目标域名为：http(s)://up-z2.qiniup.com ~~ 注意form表单上传的时候，使用目标域名为： http://up-z1.qiniup.com/~~
 3. 目前的测试上传域名：~~http://pa7pxfoa4.bkt.clouddn.com~~  （上传文件后拼接域名和文件名即可 如：http://pa7pxfoa4.bkt.clouddn.com/de767470745311e8b23034363b6f3816.jpg）
 
 相关资料和API文档：
