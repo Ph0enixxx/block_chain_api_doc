@@ -267,7 +267,7 @@ GET
 }
 ````
 
-9. /api/money/trans 转账
+9. /api/wallet/trans 转账
 
 * 请求方式
 GET
@@ -308,7 +308,7 @@ GET
 ````
 
 
-10. /api/money/total 余额？
+10. /api/wallet/total 余额？
 
 * 请求方式
 GET 
