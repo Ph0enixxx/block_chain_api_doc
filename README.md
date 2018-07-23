@@ -66,7 +66,8 @@ POST
         "token": "asdasdasdasa", // 用户凭证
         "invite_code": "asdad", /* 邀请码 */
         "invition_last": 9, /* 还有多少好友可以邀请 */
-        "contact": 17065887063  // 平台的联系方式
+        "contact": 17065887063,  // 平台的联系方式
+        "gas_price": 0.001  // 交易手续费的比率
     },
 }
 ````
@@ -241,8 +242,9 @@ GET
         "apk_url": "http://a.com/a.apk", /* 邀请用二维码地址 */
         "invite_code": "asdad", /* 邀请码 */
         "invition_last": 9, /* 还有多少好友可以邀请 */
-        "contact": 17065887063  // 平台的联系方式
-}
+        "contact": 17065887063,  // 平台的联系方式
+        "gas_price": 0.001,  // 交易手续费的比率
+	}
 }
 ````
 
