@@ -1671,6 +1671,8 @@ bucket： emole
 
 52. 获取当前交易数（包括队列中的） /api/wallet/get_nonce
 
+参数 addr 钱包地址
+
 返回
 
 ````json
