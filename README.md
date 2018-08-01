@@ -244,6 +244,7 @@ GET
         "invition_last": 9, /* 还有多少好友可以邀请 */
         "contact": 17065887063,  // 平台的联系方式
         "gas_price": 0.001,  // 交易手续费的比率
+        "license_info": "{\"姓名\":\"xxx\"}"  // 识别到的驾驶证信息
 	}
 }
 ````
@@ -1651,6 +1652,7 @@ GET
 * 输入
 - token 用户令牌 string 必须 
 - cer_url 驾照地址（七牛云上传成功后的地址） string 必须
+- license_info string 识别到的驾驶证信息
 
 * 用例解释：第一次添加会添加算力记录
 
