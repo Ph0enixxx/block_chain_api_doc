@@ -1501,12 +1501,16 @@ token 必填 用户AccessToken
         {
             "time": "2018-06-13 03:27:05",  // 邀请时间 
             "uid": 5, // 邀请用户的id
-            "id_name": "123123"  // 邀请用户的身份证姓名
+            "id_name": "123123",  // 邀请用户的身份证姓名
+            "invite_count": 11,  // 邀请人数
+            "if_add_speed": true, // 是否已经为领主添加邀请积分
         },
         {
             "time": "2018-06-13 05:50:03",
             "uid": 6,
-            "id_name": "邵英帅"
+            "id_name": "邵英帅",
+            "invite_count": 11,
+            "if_add_speed": false,
         }
     ]
 }
