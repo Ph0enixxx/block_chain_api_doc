@@ -67,7 +67,8 @@ POST
         "invite_code": "asdad", /* 邀请码 */
         "invition_last": 9, /* 还有多少好友可以邀请 */
         "contact": 17065887063,  // 平台的联系方式
-        "gas_price": 0.001  // 交易手续费的比率
+        "gas_price": 0.001,  // 交易手续费的比率
+        "need_invite": 1 // 还要邀请多少个人后才能成为领主
     },
 }
 ````
@@ -1428,6 +1429,9 @@ GET
         },
         {
             "reason": "ADD_CARID"  /* 添加了驾驶证 */
+        },
+        {
+            "reason": "ADD_INVITE2"  /* 添加了10人邀请，为领主添加 */
         },
     ],
     "total_count": 6,
