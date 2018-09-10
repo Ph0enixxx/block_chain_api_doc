@@ -70,6 +70,7 @@ POST
         "gas_price": 0.001,  // 交易手续费的比率
         "need_invite": 1, // 还要邀请多少个人后才能成为领主
         "invite_max": 20, // 最大可邀请数量
+        "add_invite2_count": 10, // 获得奖励数量
     },
 }
 ````
@@ -249,6 +250,7 @@ GET
         "license_info": "{\"姓名\":\"xxx\"}",  // 识别到的驾驶证信息
       	"need_invite": 1, // 还要邀请多少个人后才能成为领主
         "invite_max": 20, // 最大可邀请数量
+        "add_invite2_count": 1, // 邀请奖励发放人数
 	}
 }
 ````
