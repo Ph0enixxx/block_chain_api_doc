@@ -337,7 +337,8 @@ GET
 		"version_ios": "1.2.3.1",   /* ios最新版本号 */
 		"code_apk": 1001,   /* apk版本序号  */
 		"code_ios": 1001,   /* ios版本序号  */
-		"url_apk": "http://baidu.com/a.apk"   /* 更新地址 ps 只安卓用 */
+		"url_apk": "http://baidu.com/a.apk",   /* 更新地址 ps 只安卓用 */
+		"update_msg": "更新了一个来自香港的记者"   /* 更新地址 ps 只安卓用 */
 	}
 }
 ````

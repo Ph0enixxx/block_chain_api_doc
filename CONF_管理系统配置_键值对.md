@@ -31,3 +31,5 @@ PAY_CARD 支付卡
 PAY_NAME 收款人
 
 CONTACT 联系方式
+
+UPDATE_MSG 更新信息
