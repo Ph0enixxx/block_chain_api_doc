@@ -1507,6 +1507,7 @@ token 必填 用户AccessToken
             "id_name": "123123",  // 邀请用户的身份证姓名
             "invite_count": 11,  // 邀请人数
             "if_add_speed": true, // 是否已经为领主添加邀请积分
+            "is_valid": true, // 是否为有效用户
         },
         {
             "time": "2018-06-13 05:50:03",
@@ -1514,6 +1515,7 @@ token 必填 用户AccessToken
             "id_name": "邵英帅",
             "invite_count": 11,
             "if_add_speed": false,
+            "is_valid": true, // 是否为有效用户
         }
     ]
 }
