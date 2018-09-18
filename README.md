@@ -1508,6 +1508,8 @@ token 必填 用户AccessToken
             "invite_count": 11,  // 邀请人数
             "if_add_speed": true, // 是否已经为领主添加邀请积分
             "is_valid": true, // 是否为有效用户
+            "valid_invite_count": 10, // 有效邀请人数
+            "phone": "123112312", // 邀请人电话
         },
         {
             "time": "2018-06-13 05:50:03",
@@ -1516,6 +1518,8 @@ token 必填 用户AccessToken
             "invite_count": 11,
             "if_add_speed": false,
             "is_valid": true, // 是否为有效用户
+            "valid_invite_count": 10, // 有效邀请人数
+            "phone": "123112312", // 邀请人电话
         }
     ]
 }
