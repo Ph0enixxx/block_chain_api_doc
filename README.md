@@ -1423,7 +1423,7 @@ GET
             "reason": "FOLLOW_WECHAT"  /* 关注微信 */
         },
         {
-        	"reason": "LEARN_LESSON_ID:1"  /* 学习了1号视频 */
+        	"reason": "LEARN_LESSON"  /* 学习了商学院视频 */
         },
         {
             "reason": "ADD_ADDRESS"  /* 添加了收货地址 */
